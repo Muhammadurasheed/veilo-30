@@ -10,7 +10,7 @@ const responseHandler = require('../middleware/responseHandler');
 router.use(responseHandler);
 
 // Authentication middleware
-const authMiddleware = require('../middleware/auth');
+const { authMiddleware } = require('../middleware/auth');
 
 // Debug middleware
 router.use((req, res, next) => {
